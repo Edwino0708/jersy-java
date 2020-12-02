@@ -1,0 +1,20 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence  http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+ version="2.0">
+ 
+    <persistence-unit name="movie_persistence_unit" transaction-type="RESOURCE_LOCAL">
+     <description>JPA Configuration to database of movie</description>
+        <properties>
+            <property name= "hibernate.show_sql" value="true" />
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+            <property name="javax.persistence.jdbc.user" value="edwin" />
+            <property name="javax.persistence.jdbc.password" value="edwinotr" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://DESKTOP-K9U47TB;DatabaseName=movie" />
+        </properties>
+
+        <class>es.curso.bo.Persona</class>
+
+
+    </persistence-unit>
+    
+</persistence>
